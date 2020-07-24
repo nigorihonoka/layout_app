@@ -1,0 +1,15 @@
+.main
+  .showMain
+    .topContents
+      = render partial: "item"
+      = render partial: "comment"
+    %ul.links
+      %li
+        = link_to "#", class: "link" do
+          前の商品
+      %li
+        = link_to "#", class: "link" do
+          後ろの商品
+    .relatedItems
+      = link_to "#", class: "relatedItems__link" do
+        メンズをもっとみる

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.main {
+  background-color: #f8f8f8;
+  .showMain {
+    width: 700px;
+    padding: 40px 0;
+    margin: 0 auto;
+    .topContents {
+      padding: 0 0;
+      margin: 0;
+    }
+    .links {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      .link {
+        text-decoration: none;
+        color: #3CCACE;
+      }
+    }
+    .relatedItems {
+      margin: 24px 0 8px;
+      &__link {
+        text-decoration: none;
+        color: #3CCACE;
+        font-size: 22px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@import "modules/comment";
+@import "modules/item";
